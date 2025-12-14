@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
+*{
+    box-sizing: border-box;
+}
 
 body{
     margin: 0;
@@ -40,11 +43,14 @@ a{
 
 .navs a{
    margin-right: 20px;
+   transition: 0.5s;
    
 }
 
 .navs a:hover{
     color: #6c1a92;
+    font-size: 1.5rem;
+    font-weight: 600;
     text-decoration-line:underline;
     text-decoration-color: #091c4e;
     text-decoration-thickness:1px ;
@@ -54,9 +60,8 @@ a{
 main{
     width: 100%;
     min-height: 100vh;
-    padding: 100px 200px;
+    padding: 40px ;
     display: flex;
-   
     background:url(images/backgroud.png) no-repeat;
     background-size: cover;
     background-position: center;
@@ -64,9 +69,10 @@ main{
 }
 
 h2{
+    padding-top: 50px;
     color: white;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.5rem;
     display: inline-block;
 }
 
@@ -84,5 +90,19 @@ h2{
 .main-btn:hover{
     background-color: rgb(41, 32, 119);
     font-weight: 650;
+    font-size: 2rem;
+}
+
+.social-icons{
+    display:flex;
+}
+
+.social-icons a{
+    margin-right: 35px;
+    transition: 0.5s;
+}
+
+.social-icons a:hover{
+    color: darkkhaki;
     font-size: 2rem;
 }
