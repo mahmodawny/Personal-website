@@ -131,7 +131,25 @@ h2{
     min-height: 80px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
     border-radius: 10px;
+    transition: 0.5s;
+}
+
+.card:hover{
+   transform: scale(1.1);
+}
+
+.card .icon{
+    font-size: 7em;
+    font-weight: 800;
+    color: rgb(58, 40, 221) ;
+}
+
+.card h3{
+    display: inline-block;
+    font-size: 1.6em;
+    font-weight: 600;
 }
